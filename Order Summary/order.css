@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-width: 375px;
+    max-width: 1440px;
+    background-image: url(pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color:  hsl(225, 100%, 94%);
+}
+.container{
+    background-color: #fff;
+    padding-bottom: 2.5rem;
+    border-radius: 20px;
+}
+.image{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 2rem;
+}
+h2{
+    font-weight: 900;
+    margin-bottom: 1.25rem;
+    color: hsl(223, 47%, 23%);
+}
+.line{
+    width: 300px;
+    margin: auto;
+    font-size: 16px;
+    color:hsl(224, 23%, 55%);
+}
+.plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 375px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+}
+.plan .left-side{
+    display: flex;
+}
+.plan .left-side .price-section{
+    margin-left: 20px;
+}
+.price-section h3{
+    font-size: 1rem;
+    font-weight: 900;
+    margin-bottom: 4px;
+    color: #000000e7;
+}
+.price-section p{
+    float: left;
+    color: hsl(224, 23%, 55%);
+}
+.plan a{
+    color: hsl(245, 75%, 52%);
+    font-size: 0.9rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+.plan a:hover{
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.616)
+}
+.plan a:active{
+    color: hsl(245, 75%, 52%);
+}
+.accept-btn{
+    display:block;
+    width: 80%;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background-color: hsl(245, 75%, 52%);
+    cursor: pointer;
+}
+.accept-btn:hover{
+    background-color: hsla(245, 75%, 52%, 0.589);
+}
+.accept-btn:active{
+    background-color: hsl(245, 75%, 52%);
+}
+.cancel-btn{
+    background-color: transparent;
+    border: none;
+    color: #717FA6;
+    font-weight: 900;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.cancel-btn:hover{
+    color: #000000b4;
+}
+.cancel-btn:active{
+    color: #717FA6;
+}
+@media screen and (max-width:375px){
+    .line{
+        width: 275px;
+        letter-spacing: 0.5px;
+    }
+}
